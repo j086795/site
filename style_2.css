@@ -171,6 +171,37 @@ div.gallery img {
         text-align: justify;
 }
 
+.cont_bio {
+    display: flex;
+
+    align-items: center;
+}
+
+.foto_cont {
+    border: 1px solid black;
+    width: 20%;
+    height: 12vw;
+
+    position: relative;
+}
+
+.foto_bio {   
+    width: 100%;
+    height: 12vw;
+
+    opacity: 1;
+}
+
+.texto_bio, .texto_bio2 {
+    font-size: 20px;
+    position: relative;
+}
+
+.texto_bio {
+    margin-left: 5%;
+    width: 75%;
+}
+
 .img {
         float: left;
         width: 50%;
