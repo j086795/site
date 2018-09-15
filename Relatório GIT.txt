@@ -1,0 +1,120 @@
+Relatório Trabalho - Tópicos --- Alexandre Fernandes RA25080 - 15/09/2018
+
+-----
+
+<!-- GIT CLONE 'Repositório clonado para o computador local' -->
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~
+$ git clone https://github.com/j086795/site.git
+Cloning into 'site'...
+remote: Counting objects: 18, done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 18 (delta 4), reused 18 (delta 4), pack-reused 0
+Unpacking objects: 100% (18/18), done.
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~
+$ cd site
+
+
+
+<!-- GIT CONFIG --GLOBAL 'Configurando nome e email de usuário' -->
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~/site (master)
+$ git config --global user.name "Alexandre Fernandes"
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~/site (master)
+$ git config --global user.email alexandre_201@hotmail.com
+
+
+
+<!-- GIT ADD e COMMIT 'Adicionado e Comentado as alterações da página Sobre' -->
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~/site (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   sobre.html
+        modified:   style_2.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        imagens/foto_alexandre.jpg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~/site (master)
+$ git add .
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~/site (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   imagens/foto_alexandre.jpg
+        modified:   sobre.html
+        modified:   style_2.css
+
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~/site (master)
+$ git commit -m "Adicionado shortbio na página Sobre, alterado css do conteúdo relacionado e adicionado foto no arquivos de imagens."
+[master 29b951d] Adicionado shortbio na página Sobre, alterado css do conteúdo relacionado e adicionado foto no arquivos de imagens.
+ 3 files changed, 44 insertions(+), 1 deletion(-)
+ create mode 100644 imagens/foto_alexandre.jpg
+
+
+
+<!-- GIT PUSH 'Enviando alterações para o repositório online e atualizando versão' -->
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~/site (master)
+$ git push origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 60.55 KiB | 10.09 MiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/j086795/site.git
+   ce975a7..29b951d  master -> master
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~/site (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+
+
+<!-- GIT LOG 'Verificando todos os commits até o momento' -->
+
+alexa@DESKTOP-FKO0G4G MINGW64 ~/site (master)
+$ git log
+commit 29b951dafdbcc0e925dc350ffd8e81c25d68a058 (HEAD -> master, origin/master, origin/HEAD)
+Author: Alexandre Fernandes <alexandre_201@hotmail.com>
+Date:   Sat Sep 15 17:26:15 2018 -0300
+
+    Adicionado shortbio na página Sobre, alterado css do conteúdo relacionado e adicionado foto no arquivos de imagens.
+
+commit ce975a795b21eaa1b86385326e3418510ea1e7d7
+Author: Júlio César <julio_splinter@outlook.com>
+Date:   Fri Sep 14 22:38:06 2018 -0300
+
+    Alterado plano de fundo da página Equipe
+
+commit ce26ef469cda3bef757f015dfb9e3065e2cb14b4
+Author: Júlio César <julio_splinter@outlook.com>
+Date:   Fri Sep 14 22:15:54 2018 -0300
+
+    Adicionando site
+
+
